@@ -1,0 +1,68 @@
+Determining if the log exist failed with the following output:
+Change Dir: /mnt/c/Users/whitnn/Dropbox/CompSciLast/Tutorial_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_00148/fast && /usr/bin/make  -f CMakeFiles/cmTC_00148.dir/build.make CMakeFiles/cmTC_00148.dir/build
+make[1]: Entering directory '/mnt/c/Users/whitnn/Dropbox/CompSciLast/Tutorial_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_00148.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_00148.dir/CheckSymbolExists.c.o -c /mnt/c/Users/whitnn/Dropbox/CompSciLast/Tutorial_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_00148
+/home/sci/.local/lib/python2.7/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00148.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_00148.dir/CheckSymbolExists.c.o -o cmTC_00148 
+CMakeFiles/cmTC_00148.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `log'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_00148.dir/build.make:98: recipe for target 'cmTC_00148' failed
+make[1]: *** [cmTC_00148] Error 1
+make[1]: Leaving directory '/mnt/c/Users/whitnn/Dropbox/CompSciLast/Tutorial_build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_00148/fast' failed
+make: *** [cmTC_00148/fast] Error 2
+
+
+File /mnt/c/Users/whitnn/Dropbox/CompSciLast/Tutorial_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef log
+  return ((int*)(&log))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the exp exist failed with the following output:
+Change Dir: /mnt/c/Users/whitnn/Dropbox/CompSciLast/Tutorial_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c0481/fast && /usr/bin/make  -f CMakeFiles/cmTC_c0481.dir/build.make CMakeFiles/cmTC_c0481.dir/build
+make[1]: Entering directory '/mnt/c/Users/whitnn/Dropbox/CompSciLast/Tutorial_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c0481.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c0481.dir/CheckSymbolExists.c.o -c /mnt/c/Users/whitnn/Dropbox/CompSciLast/Tutorial_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c0481
+/home/sci/.local/lib/python2.7/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0481.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_c0481.dir/CheckSymbolExists.c.o -o cmTC_c0481 
+CMakeFiles/cmTC_c0481.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `exp'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c0481.dir/build.make:98: recipe for target 'cmTC_c0481' failed
+make[1]: *** [cmTC_c0481] Error 1
+make[1]: Leaving directory '/mnt/c/Users/whitnn/Dropbox/CompSciLast/Tutorial_build/CMakeFiles/CMakeTmp'
+Makefile:127: recipe for target 'cmTC_c0481/fast' failed
+make: *** [cmTC_c0481/fast] Error 2
+
+
+File /mnt/c/Users/whitnn/Dropbox/CompSciLast/Tutorial_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef exp
+  return ((int*)(&exp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
